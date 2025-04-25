@@ -13,10 +13,12 @@ public class DataService {
 
     public void execute() {
         String regNo = "RA2211003010720";
+        String name = "Tejas Kumar";
+        String email = "tk7842@srmist.edu.in";
         Map<String, Object> request = Map.of(
-            "name", "Your Name",
+            "name", name,
             "regNo", regNo,
-            "email", "your@email.com"
+            "email", email
         );
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
